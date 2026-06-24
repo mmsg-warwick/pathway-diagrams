@@ -15,7 +15,7 @@ def sample_dataframe():
             "Year": [2, 2, 3],
             "Term": [1, 2, 1],
             "Status": ["ACTIVE", "ACTIVE", "ACTIVE"],
-            "Dependencies": ["", "CS101", "CS101,CS102"],
+            "Dependencies": [[], ["CS101"], ["CS101", "CS102"]],
         }
     )
 
@@ -31,7 +31,7 @@ def sample_dataframe_with_new_status():
             "Year": [2, 2],
             "Term": [1, 2],
             "Status": ["NEW", "NEW"],
-            "Dependencies": ["", ""],
+            "Dependencies": [[], []],
         }
     )
 
@@ -47,7 +47,7 @@ def sample_dataframe_with_repurposed():
             "Year": [2, 3],
             "Term": [1, 1],
             "Status": ["REPURPOSED", "ACTIVE"],
-            "Dependencies": ["", "PH101"],
+            "Dependencies": [[], ["PH101"]],
         }
     )
 
@@ -70,6 +70,6 @@ def sample_dataframe_complex():
             "Year": [2, 2, 2, 3, 3, 4],
             "Term": [1, 1, 2, 1, 2, 1],
             "Status": ["ACTIVE", "ACTIVE", "ACTIVE", "ACTIVE", "ACTIVE", "ACTIVE"],
-            "Dependencies": ["", "A", "A", "B,C", "D", "E"],
+            "Dependencies": [[], ["A"], ["A"], ["B", "C"], ["D"], ["E"]],
         }
     )
