@@ -62,7 +62,7 @@ def build_graph(df: pd.DataFrame) -> ModuleGraph:
             year=int(row["Year"]),
             term=int(row["Term"]),
             status=row["Status"],
-            dependencies=row["Dependencies"],
+            dependencies=[d for d in row["Dependencies"].split(",") if d],
         )
 
         graph.add_module(module)
