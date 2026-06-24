@@ -1,6 +1,6 @@
-# curriculum-diagrams
+# Pathway diagrams
 
-Generates curriculum dependency diagrams from an Excel workbook. Each sheet in the workbook represents a degree stream (e.g. *Physical Applied Maths*, *Maths Bio*). The pipeline reads module metadata, builds a dependency graph, arranges modules on a grid by year and term, writes a `.drawio` file, and exports a PNG.
+Generates module pathway diagrams from an Excel workbook. Each sheet in the workbook represents a degree stream (e.g. *Physical Applied Maths*, *Maths Bio*). The pipeline reads module metadata, builds a dependency graph, arranges modules on a grid by year and term, writes a `.drawio` file, and exports a PNG.
 
 ## Requirements
 
