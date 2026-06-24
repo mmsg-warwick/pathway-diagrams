@@ -27,4 +27,4 @@ where = ["."]
 target-version = ["py312"]
 
 [tool.pytest.ini_options]
-addopts = "--cov=pipeline --cov-report=term-missing --cov-fail-under=80"
+addopts = "--cov=pipeline --cov-report=term-missing --cov-report=xml --cov-fail-under=80"
